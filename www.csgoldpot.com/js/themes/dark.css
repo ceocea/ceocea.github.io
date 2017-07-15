@@ -1,0 +1,128 @@
+.box-modal {
+	position: relative;
+	width: 500px;
+	padding: 16px;
+	left: 50%;
+	margin: 0 0 0 -250px;
+	background: #353d4e;
+	color: #efca7e;
+	font: 14px/18px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+	box-shadow: 0 0 0 6px rgba(153, 153, 153, .3);
+	border-radius: 6px;
+}
+.box-modal_close { position: absolute; right: 10px; top: 6px; font-size: 11px; line-height: 15px; color: #999; cursor: pointer; }
+.box-modal_close:hover { color: #6897bb; }
+
+/* ============================================================
+  COMMON
+============================================================ */
+/* sections */
+section {
+  margin-bottom: 60px;
+  padding: 30px;
+  background-color: #efefef;
+}
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* headings */
+h2 {
+  margin-bottom: 30px;
+}
+
+/* form elements */
+label {
+  display: block;
+}
+
+input[type="text"],textarea {
+  display: block;
+  resize: none;
+  margin: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+}
+input[type="text"]:focus,textarea:focus {
+  outline: none;
+}
+
+/* lists */
+ul.input-list {
+  list-style: none;
+  margin: 0 -10px;
+  padding: 0;
+}
+ul.input-list li {
+  display: block;
+  padding: 0 10px;
+  width: 50%;
+  float: left;
+}
+
+@media all and (max-width: 800px) {
+  ul.input-list {
+    margin: 0;
+  }
+  ul.input-list li {
+    padding: 0;
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+  }
+}
+
+.style-2 input[type="text"], .style-2 textarea {
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  -webkit-transition: border 0.3s;
+  -moz-transition: border 0.3s;
+  -o-transition: border 0.3s;
+  transition: border 0.3s;
+}
+.style-2 input[type="text"]:focus, .style-2 input[type="text"].focus, .style-2 textarea.focus, .style-2 textarea:focus {
+  border: solid 5px #969696;
+}
+
+.duhast {
+	font-size: 25px;
+	font: 500 16px/17px 'Comic Sans MS', sans-serif;
+	text-decoration: bold;
+}
+
+.btn_c {
+	height: 40px;
+	width: 120px;
+	border-radius: 5px;
+	text-align: center;
+	font: 500 14px/30px 'FontAwesome', sans-serif;
+	color: #ffffff;
+	background: #fcbb43;
+	border-bottom: 3px #efca7e solid;
+	text-decoration: none;
+	webkit-text-shadow: 1px 2px 0px #3e8534;
+	text-shadow: 1px 2px 0px #3e8534;
+	-webkit-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+.btn_c:hover{
+	opacity: 0.8;
+}

@@ -1,19 +1,15 @@
-HTTrack3.49-2+htsswf+htsjava launched on Sat, 15 Jul 2017 14:39:15 at http://csgogold.ru/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
-(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://csgogold.ru/ -O1 "C:\My Web Sites\CS Go gold" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 15 Jul 2017 15:05:54 at http://www.csgoldpot.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.csgoldpot.com/ -O1 "C:\My Web Sites\Idk" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-14:40:12	Error: 	"Not Found" (404) at link csgogold.ru/assets/img/sprite-arrows.png (from csgogold.ru/assets/css/styles.css)
-14:40:46	Warning: 	File not parsed, looks like binary: csgogold.ru/assets/fonts/fontawesome-webfont.woff2?v=4.5.0
-14:40:46	Warning: 	File not parsed, looks like binary: csgogold.ru/assets/fonts/fontawesome-webfont.ttf?v=4.5.0
-14:41:24	Error: 	"Not Found" (404) at link csgogold.ru/get (from https://mc.yandex.ru/metrika/watch.js)
-14:41:24	Error: 	"Not Found" (404) at link csgogold.ru/path (from https://mc.yandex.ru/metrika/watch.js)
-14:41:40	Error: 	"Bad Request" (400) at link www.googletagmanager.com/gtm.js?id= (from https://skinwin.com/static/img/sendinv.png)
-14:41:41	Error: 	"Not Found" (404) at link csgogold.ru/assets/images/loading.gif (from csgogold.ru/assets/css/coin.css)
-14:58:09	Error: 	"Cancelled by User" (-1) at link csgogold.ru/game/123063 (from csgogold.ru/game/123064)
+15:06:11	Warning: 	Found for www.csgoldpot.com/?login
+15:06:11	Warning: 	File has moved from www.csgoldpot.com/?login to https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=checkid_setup&openid.return_to=http%3A%2F%2Fwww.csgoldpot.top%2F%3Flogin&openid.realm=http%3A%2F%2Fwww.csgoldpot.top&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select
+15:06:55	Error: 	"Not Found" (404) at link www.csgoldpot.com/js/loading.gif (from www.csgoldpot.com/js/jquery.arcticmodal-0.3.css)
+15:06:55	Error: 	"Not Found" (404) at link www.csgoldpot.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (from connect.facebook.net/pl_PL/sdk.js)
 
-HTTrack Website Copier/3.49-2 mirror complete in 18 minutes 54 seconds : 2443 links scanned, 2436 files written (29028277 bytes overall), 2437 files updated [12875564 bytes received at 11354 bytes/sec], 26579384 bytes transferred using HTTP compression in 2353 files, ratio 27%, 28.3 requests per connection
-(6 errors, 2 warnings, 0 messages)
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 1 seconds : 68 links scanned, 64 files written (2638273 bytes overall) [2347070 bytes received at 38476 bytes/sec], 1295028 bytes transferred using HTTP compression in 20 files, ratio 15%, 3.6 requests per connection
+(2 errors, 2 warnings, 0 messages)
