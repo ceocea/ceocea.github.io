@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html ng-app="SkinWin">
+
+<!-- Mirrored from skinwin.com/resources/images/logobs.png by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Jul 2017 11:41:24 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="alternate" hreflang="ru" href="https://ru.skinwin.com/" />
+    <link rel="alternate" hreflang="en" href="https://en.skinwin.com/" />
+    <link rel="alternate" hreflang="de" href="https://de.skinwin.com/" />
+    <link rel="alternate" hreflang="fr" href="https://fr.skinwin.com/" />
+    <link rel="alternate" hreflang="pl" href="https://pl.skinwin.com/" />
+    <link rel="alternate" hreflang="pt" href="https://pt.skinwin.com/" />
+    <link rel="alternate" hreflang="es" href="https://es.skinwin.com/" />
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <meta property = "og:image" content = "../img/logobs.html" />
+    <link rel="image_src" href="logobs.html"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=1280"/>
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+    <meta name="fragment" content="!">
+    <meta name="description" content="{{'DESCRIPTION' | translate}}">
+    <base >
+    <title ng-bind="mainGame + ' ' + ('ROULETTE_TITLE' | translate) +  ' | ' + pageTitle"></title>
+
+    <link rel="prefetch" href="http://skinwin.com/resources/audio/click.mp3">
+    <link rel="prefetch" href="http://skinwin.com/resources/audio/bet.mp3">
+    <link rel="prefetch" href="http://skinwin.com/resources/audio/round_started.mp3">
+    <link rel="prefetch" href="http://skinwin.com/resources/audio/double.mp3">
+    <link rel="prefetch" href="http://skinwin.com/resources/audio/double2.mp3">
+    <link rel="prefetch" href="http://skinwin.com/resources/audio/double3.mp3">
+    <link rel="prefetch" href="http://skinwin.com/resources/audio/double4.mp3">
+    <link rel="prefetch" href="http://skinwin.com/resources/audio/double5.mp3">
+    <link rel="prefetch" href="http://skinwin.com/resources/audio/message.mp3">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style259b.css?v=51">
+    <link rel="stylesheet" href="../../css/growl9005.css?v=37">
+</head>
+
+<body ng-controller="mainController" ng-cloak>
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PZXVCV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZXVCV');</script>
+    <!-- End Google Tag Manager -->
+
+    <div class="l-header">
+        <div class="l-header-left">
+            <a class="logo" href="http://skinwin.com/">
+                <img src="../../images/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="l-header-burger">
+            <span></span>
+        </div>
+        <div class="l-header-burger-menu">
+            <a ui-sref="faq_state">
+                <span class="icon icon-s-white-question"></span>
+                <span class="btn-text">FAQ</span>
+            </a>
+            <a ui-sref="referral_state">
+                <span class="icon icon-s-white-referrals"></span>
+                <span class="btn-text" translate="REFERRAL"></span>
+            </a>
+            <a ui-sref="bonus_state" translate="FREE_POINTS"></a>
+            <a ui-sref="support_state">
+                <span class="icon icon-s-white-support"></span>
+                <span class="btn-text" translate="SUPPORT_TITLE"></span>
+            </a>
+        </div>
+        <div class="l-header-center">
+            <div class="btn">
+                <a ui-sref="faq_state">
+                    <span class="icon icon-s-white-question"></span>
+                    <span class="btn-text">FAQ</span>
+                </a>
+            </div>
+            <div class="btn">
+                <a ui-sref="referral_state">
+                    <span class="icon icon-s-white-referrals"></span>
+                    <span class="btn-text" translate="REFERRAL"></span>
+                </a>
+            </div>
+            
+            <div class="rbtn">
+                <a ui-sref="bonus_state" translate="FREE_POINTS"></a>
+            </div>
+
+            <div class="btn">
+                <a ui-sref="support_state">
+                    <span class="icon icon-s-white-support"></span>
+                    <span class="btn-text" translate="SUPPORT_TITLE"></span>
+                </a>
+            </div>
+            <div class="btn" ng-show="user.id">
+                <span  ng-click="teamplayList = !teamplayList"><span class="icon icon-s-white-team"></span>
+                <i ng-class="{'active' : teamInvites.length > 0}"></i>
+                <span class="btn-text" translate="TEAMPLAY_TITLE"></span></span>
+                <div class="teammate-box" ng-show="teamplayList">
+                    <div ng-repeat="invite in teamInvites">
+                        <div class="portrait">
+                            <div class="portrait-wrap">
+                                <a ng-href="/users/{{invite.sourceUser.id}}">
+                                    <img ng-src="{{invite.sourceUser.avatar}}" width="55" height="55" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <span>
+                            <a ng-href="/users/{{invite.sourceUser.id}}" ng-bind="invite.sourceUser.nickname" class="unlined"></a><br/>
+                            {{'SENT_INVITE' | translate}}<br/>
+                            <b style="margin-left: 0">{{'GAMES' | translate}}:</b> {{invite.games}} <b>{{'AVERAGE_BET' | translate}}:</b> {{invite.averageBet / 100}} <b>%:</b> {{invite.percentWin}}
+                        </span>
+                        <figure>
+                            <strong class="rbtn rbtn-h23" translate="ACCEPT" ng-click="acceptInvite(invite)"></strong><br/>
+                            <strong class="rbtn rbtn-h23 bg-red" translate="CANCEL" ng-click="acceptInvite(invite, true)"></strong>
+                        </figure>
+                    </div>
+                    <div ng-show="teamInvites.length < 1" translate="NO_INVITES"></div>
+                </div>
+            </div>
+            <div class="btn">
+                <a ui-sref="market_state">
+                    <span class="icon icon-s-white-cart"></span>
+                    <span class="btn-text" translate="MARKET"></span>
+                </a>
+            </div>
+        </div>
+        <div class="l-header-right">
+            <div ng-show="user" class="btn">
+                <span class="icon icon-s-green-coins"></span>
+                <span class="btn-text btn-big-text">{{user.points + user.pointsBonus}}</span>
+            </div>
+            <div ng-show="user" class="user-short-info">
+                <div class="portrait">
+                    <div class="portrait-wrap">
+                        <a ng-href="/users/{{user.id}}">
+                            <img ng-src="{{user.avatar}}" width="55" height="55" alt="">
+                        </a>
+                    </div>
+                </div>
+                <span>
+                    {{'HELLO' | translate}},<br/>
+                    <a ng-href="/users/{{user.id}}" ng-bind="user.nickname" class="unlined"></a>
+                </span>
+            </div>
+            <!-- <div class="btn" ng-show="user">
+                <span class="icon icon-s-white-sector"></span>
+                <span class="btn-text" translate="INVENTORY"></span>
+            </div> -->
+            <!-- <div class="btn">
+                <span class="icon icon-s-white-bell"></span>
+            </div> -->
+            <!-- <div class="btn" style="position: relative">
+                <span class="icon icon-s-white-gear" ng-click="openSettings = !openSettings"></span>
+                <div class="settings-block" ng-show="openSettings">
+                    <div class="soundcheck" ng-class="{'soundOff' : soundOff}" ng-attr-title="{{soundTitle | translate}}" ng-click="soundCheck()"></div>
+                    <div style="clear: both" class="lang-switch"><span ng-repeat="language in languages" title="{{language.name}}" ng-click="changeLanguage(language.short)" class="{{language.short}}-lang" ng-class="{'active' : currentLang == language.short}"></span></div>
+                </div>
+            </div> -->
+            <div class="btn settings-block">
+                <a href="#" class="lang-panel-2 lang-switch">
+                    <div class="switcher-div" title="{{'CHANGE_LANG' | translate}}">
+                        <span title="{{'CHANGE_LANG' | translate}}" class="{{currentLang}}-lang active"></span>
+                        <figure class="triangle" title="{{'CHANGE_LANG' | translate}}"></figure>
+                    </div>
+                    <div class="lang-container">
+                        <span ng-repeat="language in languages" title="{{language.name}}" ng-click="changeLanguage(language.short)" class="{{language.short}}-lang" ng-class="{'active' : currentLang == language.short}"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="btn settings-block">
+                <div class="soundcheck" ng-class="{'soundOff' : soundOff}" ng-attr-title="{{soundTitle | translate}}" ng-click="soundCheck()"></div>
+            </div>
+            <div class="btn" ng-show="!user">
+                <a class="steam-login" title="{{'STEAM_LOGIN' | translate}}" href="https://skinwin.com/login">
+                    <img ng-src="../img/login.png">
+                </a>
+            </div>
+            <div class="btn" ng-show="user">
+                <a href="http://skinwin.com/logout" ng-attr-title="{{'LOGOUT' | translate}}" style="display: inline-block; margin-top: 8px;"><img src="../../images/sprite.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="l-content">
+        <div class="chat-btn" ng-show="!chatOpen" ng-click="chatOpen = true"><span class="icon icon-s-white-message"></span></div>
+        <div class="chat" ng-show="chatOpen">
+            <div class="chat-header" ng-click="chatOpen = false">
+                <!-- <div data-key="channel" class="chat-type chat-is-type-active">Channel</div>
+                <div data-key="team" class="chat-type">Team</div> -->
+            </div>
+            <div class="v-scroll-box chat-list-channel">
+                <div class="v-scroll-box-wrap" scroll-glue-bottom="glued">
+                    <div class="chat-list">
+                        <div class="scrl-item" ng-repeat="message in messages | orderBy: 'id'" id="message{{message.id}}">
+                            <span style="float:right;"><a href="#" style="color: red; font-size: 18px;" class="delete-message delete-user" ng-show="user.access >= 50 && message.user.id != 0" ng-click="banUserconfirm(message)">#</a></span>
+                            <span style="float:right;"><a href="#" style="color: red; font-size: 18px; margin-right: 5px;" class="delete-message" ng-show="user.access >= 50 && message.user.id != 0" ng-click="deleteMessage(message.id)">x</a></span>
+                            <div class="scrl-item-pict">
+                                <div class="portrait">
+                                    <a target="_blank" ng-href="/users/{{message.user.id}}"><div class="portrait-wrap">
+                                        <img ng-src="{{message.user.avatar}}" alt="userpic" height="35" width="35"> 
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="scrl-item-info">
+                                <!-- 6min -->
+                            </div>
+                            <div class="scrl-item-desc">
+                                <strong><a target="_blank" ng-href="/users/{{message.user.id}}"  ng-bind="message.system != true ? message.user.nickname : (message.user.nickname | translate)"></a></strong>
+                                <span ng-show="message.message != 'CHAT_MESSAGE_HIDDEN'" ng-bind-html='message.system != true ? message.text : ("USER_GET_PUNISHMENT" | translate: {username: message.messageArgs[1], time: (message.messageArgs[0] | remainTime2)}) + " " + (message.message | translate)'></span>
+                                <div ng-show="message.message == 'CHAT_MESSAGE_HIDDEN'" style="color: darkred">{{'CHAT_MESSAGE_HIDDEN' | translate}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="v-scroll-box-bar"><div></div></div>
+            </div>
+            <div class="chat-answer">
+                <div class="chat-send" ng-click="sendMessage(messageText)"><span class="icon icon-xs-white-send"></span></div>
+                <textarea ng-change="changeMessage(messageText)" ng-model="messageText" placeholder="{{'WRITE_MESSAGE' | translate}}" ng-keydown="$event.which === 13 && sendMessage(messageText, $event)"></textarea>
+            </div>
+        </div>
+
+        <div class="l-game-menu l-game-menu-adp">
+            <div class="bookmark" ui-sref-active="cs-bookmark">
+                <a ui-sref="jackpot_state({game: ''})">
+                    <div class="bookmark-wrap">
+                        <div class="bookmark-img"><span class="icon icon-s-white-csgo"></span></div>
+                        <div class="bookmark-label">Jackpot</div>
+                        <div class="bookmark-amount"> {{allCs/100}}</div>
+                    </div>
+                </a>
+            </div>
+            <div class="bookmark" ui-sref-active="double-bookmark">
+                <a ui-sref="double_state">
+                    <div class="bookmark-wrap">
+                        <div class="bookmark-img"><span class="icon icon-s-white-roulette"></span></div>
+                        <div class="bookmark-label">Double</div>
+                        <div class="bookmark-amount"><span class="icon icon-xs-white-coins"></span> {{allDouble}}</div>
+                    </div>
+                </a>
+            </div>
+            <div class="bookmark" ui-sref-active="dota-bookmark">
+                <a ui-sref="jackpot_state({game: 'dota2'})">
+                    <div class="bookmark-wrap">
+                        <div class="bookmark-img"><span class="icon icon-s-white-dota"></span></div>
+                        <div class="bookmark-label">Jackpot</div>
+                        <div class="bookmark-amount"> {{allDota/100}}</div>
+                    </div>
+                </a>
+            </div>
+            <div class="bookmark" ui-sref-active="coinflip-bookmark">
+                <a ui-sref="coinflip_state">
+                    <div class="bookmark-wrap">
+                        <div class="bookmark-img"><span class="icon icon-s-white-coinflip"></span></div>
+                        <div class="bookmark-label">Coinflip</div>
+                        <div class="bookmark-amount"> {{allCoinflip}}</div>
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="bookmark" ui-sref-active="crash-bookmark">
+                <a ui-sref="crash_state">
+                    <div class="bookmark-wrap">
+                        <div class="bookmark-img"><span class="icon icon-s-white-halfmoon"></span></div>
+                        <div class="bookmark-label">Crash</div>
+                        <div class="bookmark-amount"><span class="icon icon-xs-white-coins"></span> 0</div>
+                    </div>
+                </a>
+            </div> -->
+        </div>
+    </div>
+    <div ui-view ng-cloak style="min-width: 1280px;"></div>
+    <div class="l-footer">
+        <div class="l-footer-wrap">
+            <div class="l-footer-main">
+                <div class="left" translate="FOOTER_ONE"></div>
+                <div class="right">
+                    <a href="https://steamcommunity.com/groups/skinwinclub" target="_blank"><span class="icon icon-m-green-steam"></span></a>
+                    <a href="https://vk.com/skinwincom" target="_blank"><span class="icon icon-m-green-vk"></span></a>
+                    <a href="http://skinwin.com/cdn-cgi/l/email-protection#42313732322d30360231292b2c352b2c6c212e3720" target="_blank"><span class="icon icon-m-green-mail"></span></a>
+                    <a href="https://www.facebook.com/skinwin.club/" target="_blank"><span class="icon icon-m-green-facebook"></span></a>
+                    <!-- <a href="#" target="_blank"><span class="icon icon-m-green-twitter"></span></a> -->
+                </div>
+            </div>
+            <div class="l-footer-links">
+                <a  ui-sref="agreement_state" href="http://skinwin.com/agreement/" translate="AGREEMENT"></a> | <a ui-sref="contacts_state"  href="http://skinwin.com/contacts/" translate="CONTACT_US"></a> | &copy; skinwin.com 2016-2017
+            </div>
+        </div>
+    </div>
+
+    <div class="l-lightbox" style="display: none;" id="popup">
+        <div class="l-lightbox-wrap">
+            <div class="l-constraint-w900 text-center">
+                <div class="fsz-30-35 fw-300 l-offset-mb10">
+                    <span ng-bind-html="popup.title"></span>
+                </div>
+                <div class="bg-dark text-center l-constraint-p40-0-40 sh-20 fsz-18-18">
+                    <div ng-bind-html="popup.text"></div>
+                    <div ng-show="popup.params.friend">
+                        <div class="input-text l-offset-mt30">
+                            <div class="input-text-wrap">
+                                <input type="number" min="1" ng-model="popup.params.friendID" ng-model-options="{ debounce: 500 }" ng-change="loadFriend(popup.params.friendID, popup.params)">
+                            </div>
+                        </div>
+                        <div ng-show="popup.params.friendIdObject == 'false'">{{'USER_NOT_FOUND' | translate}}</div>
+                        <img src="../img/loader.png" class="loader-img" ng-show="popup.params.friendIdObject == 'loader'">
+                        <br /><br />
+                        <div ng-show="popup.params.friendIdObject.user" class="user-short-info l-constraint-pb15">
+                            <div class="portrait">
+                                <div class="portrait-wrap" target="_blank">
+                                    <a ng-href="/users/{{popup.params.friendIdObject.user.id}}">
+                                        <img ng-src="{{popup.params.friendIdObject.user.avatar}}" width="55" height="55" alt="{{popup.params.friendIdObject.user.nickname}}">
+                                    </a>
+                                </div>
+                            </div>
+                            <span>
+                                <a ng-href="/users/{{popup.params.friendIdObject.user.id}}" ng-bind="popup.params.friendIdObject.user.nickname" target="_blank"></a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="text" ng-show="popup.params.banuser">
+                        <strong translate="CHOOSE_REASON"></strong><br/>
+                        
+                        <input type='radio' id="CHAT_FLOOD" name="reason" value="CHAT_FLOOD" ng-model="ban.reason"><label for="CHAT_FLOOD">{{'CHAT_FLOOD' | translate}}</label><br/>
+                        <input type='radio' id="CHAT_SPAM" name="reason" value="CHAT_SPAM" ng-model="ban.reason"><label for="CHAT_SPAM">{{'CHAT_SPAM' | translate}}</label><br/>
+                        <input type='radio' id="CHAT_SWEARING" name="reason" value="CHAT_SWEARING" ng-model="ban.reason"><label for="CHAT_SWEARING">{{'CHAT_SWEARING' | translate}}</label><br/>
+                        <input type='radio' id="CHAT_MENDICANCY" name="reason" value="CHAT_MENDICANCY" ng-model="ban.reason"><label for="CHAT_MENDICANCY">{{'CHAT_MENDICANCY' | translate}}</label><br/>
+                        
+                        <figure ng-show="user.access == 100">
+                            <strong translate="CHOOSE_TIME"></strong>
+                            <input type="number" min="1" ng-model="ban.days">&nbsp;&nbsp;{{'DAYS' | translate}}&nbsp;&nbsp;
+                            <input type="number" min="1" ng-model="ban.hours">&nbsp;&nbsp;{{'HOURS' | translate}}&nbsp;&nbsp;
+                            <input type="number" min="1" ng-model="ban.minutes">&nbsp;&nbsp;{{'MINUTES' | translate}}&nbsp;&nbsp;
+                        </figure>
+                    </div>
+
+                    <div ng-show="popup.params.group" class="l-constraint-pb15">
+                        <div class="input-text l-offset-mt30">
+                            <div class="input-text-wrap">
+                                <input type="text" ng-model="popup.params.groupTag">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <div class="rbtn rbtn-h30 l-constraint-w100" ng-click="closePopup()" ng-show="!popup.buttons">OK</div>
+                        <div class="rbtn rbtn-h30 l-offset-mr50 l-constraint-w100" ng-show="popup.params.friend" ng-click="donateStuffTwo(user.botInventory, popup.params.friendID);" ng-class="{'disabled': !popup.params.friendIdObject.user}" translate="YES"></div>
+                        <div class="rbtn rbtn-h30 l-offset-mr50 l-constraint-w100" ng-show="popup.params.group" ng-click="donateStuffTwo(user.botInventory, false, popup.params.groupTag);" ng-class="{'disabled': !popup.params.groupTag}" translate="YES"></div>
+                        <div class="rbtn rbtn-h30 l-offset-mr50 l-constraint-w100"  ng-click="banUser(criminal.id, ban);closePopup();" ng-show="popup.params.banuser && ban.reason">{{'CONFIRM' | translate}}</div>
+
+                        <div ng-repeat="button in popup.buttons" class="rbtn rbtn-h30 l-constraint-w100" ng-click="button.func(button.args)" translate="{{button.text}}"></div>
+                        <div class="rbtn rbtn-h30 bg-red l-constraint-w100" ng-click="closePopup()" ng-show="popup.buttons && !popup.params.onlyButtons" translate="CANCEL"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="l-lightbox" style="display: none;" id="InvPopup">
+        <div class="l-lightbox-wrap">
+            <div class="l-constraint-w900 text-center">
+                <div class="fsz-30-35 fw-300 l-offset-mb10">
+                    <span translate="STEAM_INVENTORY"></span>
+                </div>
+                <div class="bg-dark text-center l-constraint-p40-0-40 sh-20 fsz-18-18">
+                    <div>
+                        {{'TOTAL_ITEMS_CHOSEN' | translate}} <b ng-bind="(user.inventory | filter:{red:true}).length"></b><br/>
+                        {{'TOTAL_COST' | translate}} <b>{{sum(user.inventory, 'priceUsd')/100}}</b>
+                    </div>
+                    <div ng-show="invUpdate">
+                        {{'LAST_UPDATE' | translate}}: {{invUpdate | humanTime:timeOffset}} <div class="rbtn" ng-class="{'disabled' : inventoryInUpdate}" translate="UPDATE" ng-click="updateInventory(true)"></div>
+                    </div>
+                    <div ng-show="invSort != 'points' && !pointsInventoryType">{{"RESTRICT_ITEMS" | translate}} {{restrictItems[mainGame].restrictNames.join(", ")}}.</div> 
+
+                    <img src="../img/loader.png" class="loader-img" ng-show="inventoryInUpdate">
+                            
+                    <div style="height: 600px;overflow: auto; margin-top: 20px;">
+                        <div class="weapon-container" ng-repeat="weapon in user.inventory | orderBy: '-itemTemplate.priceUsd' | limitTo:invLimit:invStart track by $index" ng-hide="newItems.ids.indexOf(weapon.id) != -1 && !weapon.success || weapon.itemTemplate.priceUsd <= 0 || inventoryInUpdate || weapon.tradeable != true">
+                            <div ng-class="{'red' : weapon.red, new_weapon : weapon.success, 'blocked' : weapon.blocked}" class="weapon-container-inner" ng-click="weapon.blocked ? checkBlock(weapon) : weapon.red = !weapon.red;">
+                                <div>
+                                    <img ng-src="{{weapon.itemTemplate.icon | imageUrl}}" alt="{{weapon.itemTemplate.name}}" width="120" title="{{weapon.itemTemplate.name}}">
+                                </div>
+                                <div>{{invSort == 'points' ? weapon.itemTemplate[invSort] :  weapon.itemTemplate[invSort]/100}} <strong ng-show="weapon.success">NEW!</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px">
+                        <div class="rbtn" onClick="yaCounter35137815.reachGoal('addfromsteam'); ga('send', 'event', 'button', 'addfromsteam');" ng-click="sendInv(user.inventory, 'INPUT')" ng-class="{'disabled' : (user.inventory | filter:{red:true}).length < 1 || !user.inventory}">{{'ADD_FROM_STEAM' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div growl></div>
+
+    <script src="../../../ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../../ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!--NEW LIBS-->
+    <script src="../../js/libs/circleStatf56f.js?v11" type="text/javascript"></script>
+    <script src="../../js/libs/jquery.hScrollBox4b6d.js?v5" type="text/javascript"></script>
+    <script src="../../js/libs/roulette.js"></script>
+    <script src="../../js/libs/jquery.cvScrollBox4b6d.js?v5"></script>
+    <script src="../../js/libs/jquery.vScrollBox1bce.js?v=6"></script>
+    <!--END NEW LIBS-->
+
+    <!-- <script src="js/lib/jquery.knob.js"></script> -->
+    <script src="../../js/lib/rotate.js"></script>
+
+    <script src="../../../ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <script src="../../js/lib/angular-ui-router.js"></script>
+    <script src="../../js/lib/angular-translate.min.js"></script>
+    <script src="../../../cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-cookie/2.8.1/angular-translate-storage-cookie.js"></script>
+    <script src="../../js/lib/angular-websocket.js"></script>
+    <script src="../../../ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.min.js"></script>
+    <script src="../../../ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.min.js"></script>
+
+    <script src="../../js/lib/angular-growl.min5e1f.js?v=2"></script>
+    <script src="../../js/lib/scrollglue.js"></script>
+    <script src="../../js/lib/ifvisible.js"></script>
+    <script src="../../js/lib/Autolinker.min.js"></script>
+    
+    <script src="../../../cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+
+    <script src="../../app/constants30f4.js?v=3"></script>
+    <script src="../../app/localizationbcfe.js?v=22"></script>
+    <script src="../../app/appbea6.js?v=7"></script>
+    <script src="../../app/services/socketServiceb6f5.js?v=10"></script>
+    <script src="../../app/controllers/main41c3.js?v=53"></script>
+    <script src="../../app/controllers/jackpot8e5e.js?v=15"></script>
+    <script src="../../app/controllers/user5e1f.js?v=2"></script>
+    <script src="../../app/controllers/history.js"></script>
+    <script src="../../app/controllers/game.js"></script>
+    <script src="../../app/controllers/top.js"></script>
+    <script src="../../app/controllers/double2dac.js?v=21"></script>
+    <script src="../../app/controllers/coinflipdae4.js?v=301"></script>
+    <script src="../../app/controllers/crash.js"></script>
+    <script src="../../app/controllers/referralae52.js?v=5"></script>
+    <script src="../../app/controllers/bonusae52.js?v=5"></script>
+    <script src="../../app/controllers/market3f56.js?v=11"></script>
+    <script src="../../app/controllers/support1bce.js?v=6"></script>
+    <script src="../../app/controllers/faq.js"></script>
+    <script src="../../app/directives/chat.js"></script>
+<script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+
+<!-- Mirrored from skinwin.com/resources/images/logobs.png by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Jul 2017 11:41:24 GMT -->
+</html>

@@ -1,12 +1,19 @@
-HTTrack3.49-2+htsswf+htsjava launched on Sat, 15 Jul 2017 14:32:43 at http://www.csgolive.com/home +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
-(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.csgolive.com/home -O1 "C:\My Web Sites\CSGO Live" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 15 Jul 2017 14:39:15 at http://csgogold.ru/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://csgogold.ru/ -O1 "C:\My Web Sites\CS Go gold" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-14:32:44	Warning: 	File not parsed, looks like binary: https://www.csgolive.com/robots.txt
+14:40:12	Error: 	"Not Found" (404) at link csgogold.ru/assets/img/sprite-arrows.png (from csgogold.ru/assets/css/styles.css)
+14:40:46	Warning: 	File not parsed, looks like binary: csgogold.ru/assets/fonts/fontawesome-webfont.woff2?v=4.5.0
+14:40:46	Warning: 	File not parsed, looks like binary: csgogold.ru/assets/fonts/fontawesome-webfont.ttf?v=4.5.0
+14:41:24	Error: 	"Not Found" (404) at link csgogold.ru/get (from https://mc.yandex.ru/metrika/watch.js)
+14:41:24	Error: 	"Not Found" (404) at link csgogold.ru/path (from https://mc.yandex.ru/metrika/watch.js)
+14:41:40	Error: 	"Bad Request" (400) at link www.googletagmanager.com/gtm.js?id= (from https://skinwin.com/static/img/sendinv.png)
+14:41:41	Error: 	"Not Found" (404) at link csgogold.ru/assets/images/loading.gif (from csgogold.ru/assets/css/coin.css)
+14:58:09	Error: 	"Cancelled by User" (-1) at link csgogold.ru/game/123063 (from csgogold.ru/game/123064)
 
-HTTrack Website Copier/3.49-2 mirror complete in 18 seconds : 34 links scanned, 33 files written (3434558 bytes overall) [807018 bytes received at 44834 bytes/sec], 3389410 bytes transferred using HTTP compression in 31 files, ratio 21%, 2.8 requests per connection
-(No errors, 1 warnings, 0 messages)
+HTTrack Website Copier/3.49-2 mirror complete in 18 minutes 54 seconds : 2443 links scanned, 2436 files written (29028277 bytes overall), 2437 files updated [12875564 bytes received at 11354 bytes/sec], 26579384 bytes transferred using HTTP compression in 2353 files, ratio 27%, 28.3 requests per connection
+(6 errors, 2 warnings, 0 messages)
