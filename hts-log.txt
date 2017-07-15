@@ -1,18 +1,12 @@
-HTTrack3.49-2+htsswf+htsjava launched on Thu, 13 Jul 2017 19:59:56 at http://www.metin2nl.cf/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
-(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.metin2nl.cf/ -O1 "C:\My Web Sites\NewLegion" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 15 Jul 2017 14:32:43 at http://www.csgolive.com/home +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.csgolive.com/home -O1 "C:\My Web Sites\CSGO Live" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-20:00:37	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 0): www.metin2nl.cf/captcha/simple-php-captcha.php?_CAPTCHA&t=0.99602900+1499965196
-20:00:55	Error: 	"Not Found" (404) at link www.metin2nl.cf/site/ishop (from www.metin2nl.cf/)
-20:00:55	Error: 	"Not Found" (404) at link www.metin2nl.cf/LINK PREZENTARE (from www.metin2nl.cf/)
-20:01:36	Error: 	"Not Found" (404) at link www.metin2nl.cf/images/read-more.png (from www.metin2nl.cf/style.css)
-20:01:36	Error: 	"Not Found" (404) at link www.metin2nl.cf/images/ranking-mid.png (from www.metin2nl.cf/style.css)
-20:01:38	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 0): www.metin2nl.cf/captcha/simple-php-captcha.php?_CAPTCHA&t=0.73225600+1499965226
-20:01:39	Error: 	"Not Found" (404) at link www.metin2nl.cf/images/regat/.jpg (from www.metin2nl.cf/index.php?page=guilds)
+14:32:44	Warning: 	File not parsed, looks like binary: https://www.csgolive.com/robots.txt
 
-HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 43 seconds : 88 links scanned, 82 files written (2281695 bytes overall) [2285618 bytes received at 22190 bytes/sec], 35212 bytes transferred using HTTP compression in 1 files, ratio 27%, 3.3 requests per connection
-(5 errors, 2 warnings, 0 messages)
+HTTrack Website Copier/3.49-2 mirror complete in 18 seconds : 34 links scanned, 33 files written (3434558 bytes overall) [807018 bytes received at 44834 bytes/sec], 3389410 bytes transferred using HTTP compression in 31 files, ratio 21%, 2.8 requests per connection
+(No errors, 1 warnings, 0 messages)

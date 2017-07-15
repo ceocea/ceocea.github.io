@@ -1,0 +1,949 @@
+html, body  {
+  height:100%;
+  width:100%;
+  margin:0;
+  max-height:100%;
+  min-height:100%;
+  min-width:100%;
+  max-width:100%;
+  font-family: 'Ubuntu', sans-serif;
+  display:flex;
+}
+
+app-root {
+  height:100%;
+  width:100%;
+  max-height:100%;
+  min-height:100%;
+  min-width:100%;
+  max-width:100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.avatar {
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-image: url("../../../steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg");
+  width:50px;
+  height:50px;
+  display:inline-block;
+}
+
+.navbar-nav button {
+  display:inline-block;
+  vertical-align:middle;
+}
+
+
+.dark-bg-1 {
+  background-color: rgba(17, 17, 17, 1);
+  color: #fff;
+}
+
+.dark-bg-3 .list-group-item {
+  color:#fff;
+  background-color: rgba(17, 17, 17, 1);
+}
+
+.dark-bg-2 {
+  background-color: #1a1d1f;
+  color:#fff;
+}
+
+.dark-bg-3 {
+  background-color: #292c2f;
+  color:#fff;
+}
+
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgba(17, 17, 17, 1);
+}
+
+::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: rgba(17, 17, 17, 1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: #2c97de ;
+}
+
+
+.modal-dialog {
+  max-width:700px !important;
+}
+
+
+input.form-control {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #1a1d1f;
+  color:#fff;
+}
+
+input.form-control:disabled {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #1a1d1f;
+  color:#fff;
+}
+
+.input-group-addon {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #1a1d1f;
+  color:#fff;
+}
+
+input:focus.form-control {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #1a1d1f;
+  color:#fff;
+}
+
+input:active.form-control {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #1a1d1f;
+  color:#fff;
+}
+
+[routerlink] {
+  outline:none !important;
+}
+
+.case, .caseContent {
+  outline:none !important;
+}
+
+
+
+select.form-control {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #1a1d1f;
+  color:#fff;
+}
+
+select.form-control:focus {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #1a1d1f;
+  color:#fff;
+}
+
+option {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #1a1d1f;
+  color:#fff;
+}
+
+
+.caseList {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-success-new {
+  padding: 9px 20px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+
+.btn-dark-1 {
+  cursor:pointer;
+  padding: 10px 20px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none;
+}
+
+.btn-dark-1 {
+  background: #1f8dd6;
+  color: #ffffff;
+}
+
+.btn-dark-1:hover, .btn-dark-1:focus, .btn-dark-1:active, .btn-dark-1.active, .open > .dropdown-toggle.btn-dark-1 {
+  background: #1f8dd6;
+}
+
+.btn-dark-1:active, .btn-dark-1.active {
+  background: #1f8dd6;
+  box-shadow: none;
+}
+
+
+.modal-content {
+  background-color: #1a1d1f;
+  color: #fff;
+  border: 2px solid #303030;
+}
+
+.modal-header {
+  border-color: #303030;
+}
+
+
+steam-id {
+  word-break:break-word;
+  word-wrap:break-word;
+}
+
+button {
+  cursor:pointer;
+}
+
+.pointer {
+  cursor:pointer;
+}
+
+
+.oldStyle.dark-bg-1 {
+  background-color: #1A1A1A;
+  color: #5c5c5c;
+}
+
+.oldStyle.dark-bg-3 .list-group-item {
+  color:#fff;
+  background-color: #1A1A1A;
+}
+
+.oldStyle.dark-bg-2 {
+  background-color: #212121;
+  color:#fff;
+}
+
+.oldStyle.dark-bg-3 {
+  background-color: #292c2f;
+  color:#fff;
+}
+
+
+
+.oldStyle .dark-bg-1 {
+  background-color: #1A1A1A;
+  color: #5c5c5c;
+}
+
+.oldStyle .dark-bg-3 .list-group-item {
+  color:#fff;
+  background-color: #1A1A1A;
+}
+
+.oldStyle .dark-bg-2 {
+  background-color: #212121;
+  color:#fff;
+}
+
+.oldStyle .dark-bg-3 {
+  background-color: #292c2f;
+  color:#fff;
+}
+
+
+
+
+.oldStyle input.form-control {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #212121;
+  color:#fff;
+}
+
+.oldStyle .input-group-addon {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #212121;
+  color:#fff;
+}
+
+.oldStyle input:focus.form-control {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #212121;
+  color:#fff;
+}
+
+.oldStyle input:active.form-control {
+  border: 1px solid rgba(38,38,38,1);
+  background-color: #212121;
+  color:#fff;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  color:#fff;
+}
+
+.oldStyle select {
+  background-color: #212121 !important;
+}
+
+.oldStyle .input-group-addon {
+  background-color: #212121 !important;
+}
+
+.oldStyle .modal-content {
+  background-color: #212121;
+  color: #fff;
+  border: 2px solid #303030;
+}
+
+.oldStyle .modal-header {
+  border-color: #303030;
+}
+.oldStyle .caseContent
+ {
+  border-radius:5px !important;
+}
+
+.oldStyle .itemName {
+  color: #fff !important;
+}
+
+.oldStyle .scrollContainer {
+  padding-right:45px !important;
+}
+
+.oldStyle .weapon, .oldStyle .caseImage, .oldStyle .box .list-group-item,.oldStyle .box,.oldStyle .caseContent, .oldStyle .withdrawSettings,.oldStyle .inventoryItems {
+  background-color: #1a1a1a !important;
+}
+
+.oldStyle .box {
+  text-align:left;
+  padding:20px 30px;
+  border-radius:5px;
+  margin:10px 0;
+  border: 1px solid rgba(38,38,38,1);
+}
+
+.oldStyle ::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #1a1a1a !important;
+}
+
+.oldStyle ::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #1a1a1a !important;
+}
+
+.oldStyle ::-webkit-scrollbar-thumb
+{
+  background-color: #2c97de !important;
+}
+
+.oldStyle .nav-link.active {
+  color: #2c97de !important;
+}
+
+.oldStyle .indicator {
+  display:none !important;
+}
+
+.oldStyle .spinnerIndicator {
+  background-color: #2c97de !important;
+}
+
+
+
+
+
+
+.oldStyle .scrollLeft {
+  color:#2c97de!important;
+}
+
+.oldStyle .scrollRight {
+
+  color:#2c97de!important;
+
+}
+
+.oldStyle .scrollLeft:hover {
+  background-color:#2c97de!important;
+
+}
+
+.oldStyle .scrollRight:hover {
+  background-color:#2c97de!important;
+
+}
+
+
+.oldStyle .caseImage.selected {
+  border-color:#2c97de!important;
+
+}
+
+.oldStyle .caseImage:hover {
+  border-color:#2c97de!important;
+
+}
+
+
+.oldStyle .oddsContainer .trash {
+  color: #2c97de!important;
+
+}
+
+.oldStyle .oddsContainer .trash:hover {
+  color: #2c97de!important;
+}
+
+
+.oldStyle .weapon:hover {
+
+  border: 3px solid #2c97de!important;
+
+}
+
+.oldStyle .weapon.selected {
+
+  border: 3px solid #2c97de!important;
+
+}
+
+.oldStyle .modal-content {
+  background-color: #1A1A1A !important;
+}
+
+.modal-backdrop {
+  z-index:9999998;
+}
+
+.modal {
+  z-index:9999999;
+}
+
+
+.depositImgDiv1 {
+  height:40px;
+  display:inline-block;
+  width:172px;
+  cursor:pointer;
+  background-image: url(../images/cash_deposit.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.depositImgDiv1:hover {
+  background-image: url(../images/cash_deposit_new_hover.png);
+}
+
+
+.depositImgDiv2 {
+  height:40px;
+  display:inline-block;
+  width:226px;
+  cursor:pointer;
+  background-image: url(../images/skin_deposit_new_normal.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.depositImgDiv2:hover {
+  background-image: url(../images/skin_deposit_new_hover.png);
+}
+
+
+/*Deposit Modal*/
+.depositImg {
+  margin:5px;
+}
+.depositImg:hover {
+  -webkit-transform: scale(1.1); ;
+  -moz-transform: scale(1.1); ;
+  -ms-transform: scale(1.1); ;
+  -o-transform: scale(1.1); ;
+  transform: scale(1.1); ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*CASE DESIGN*/
+.caseItem .price-tag {
+  position:absolute;
+  opacity: 0;
+  z-index:4;
+  right:-0px;
+  top:-0px;
+  transition: all 500ms ease-in-out;
+}
+
+.caseItem:hover .price-tag {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.price-tag a, .post-tag a {
+  float: left;
+  position: relative;
+  width: auto;
+  height: 30px;
+  margin-left: 20px;
+  padding: 0 12px;
+  line-height: 30px;
+  background: #1f8dd6;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.price-tag a:before, .post-tag a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.price-tag a:after, .post-tag a:after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  width: 4px;
+  height: 4px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #fff;
+  -moz-box-shadow: -1px -1px 2px #004977;
+  -webkit-box-shadow: -1px -1px 2px #004977;
+  box-shadow: -1px -1px 2px #004977;
+}
+
+.price-tag a:hover, .post-tag a:hover {
+  background: #1d85ca;
+}
+
+/* Add rounded corners to right end of the anchor tag */
+.price-tag a {
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Position and show only right border of triangle  */
+.price-tag a:before {
+  left: -15px;
+  border-color: transparent #1f8dd6 transparent transparent;
+  border-width: 15px 15px 15px 0;
+}
+
+/* Fix the circle between anchor box and triangle left to it  */
+.price-tag a:after {
+  left: -2px;
+}
+
+.price-tag a:hover:before {
+  border-color: transparent #1d85ca transparent transparent;
+}
+
+/* Add rounded corners to left end of the anchor tag */
+.post-tag a {
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+/* Position right and show only left border of triangle  */
+.post-tag a:before {
+  right: -15px;
+  border-color: transparent transparent transparent #1f8dd6;
+  border-width: 15px 0 15px 15px;
+}
+
+/* Fix the circle between anchor box and triangle right to it  */
+.post-tag a:after {
+  right: -2px;
+}
+
+.post-tag a:hover:before {
+  border-color: transparent transparent transparent #1d85ca;
+}
+
+.case {
+  text-align: center;
+  padding: 1%;
+}
+
+.caseList {
+  margin: 0;
+}
+
+.caseContent {
+  position: relative;
+  text-align:center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  overflow:visible !important;
+}
+
+.caseTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #444444;
+  color: white;
+  font-size: 15px;
+  padding: 4px 4px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  word-break: break-all;
+}
+
+.casePrice {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.caseImage {
+  width: 90%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 40px;
+  border-radius: 3px;
+}
+
+.jackpotImage {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width:100%;
+  max-height:100%;
+  height: 100%;
+  transition: all 300ms ease-in-out;
+
+}
+
+.jackpotImage:hover {
+  transform: translateX(-50%) scale(1.2,1.2);
+}
+
+.caseDescription {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #444444;
+  font-size: 15px;
+  padding: 4px 4px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  word-break: break-all;
+}
+
+
+
+
+/*MENUS*/
+.dropdown-item {
+  line-height:30px;
+  cursor:pointer;
+  padding: 1px 1rem
+}
+
+
+
+
+.dropdown-menu {
+  border: 1px solid #444;
+  color:#fff;
+  background-color: #1a1d1f;
+}
+
+.dropdown-item {
+  color:#fff;
+  background-color: #1a1d1f;
+}
+
+.dropdown-item:hover {
+  color:#fff;
+  background-color: #303335 !important;
+}
+
+
+
+.recentWinning {
+  padding: 5px !important;
+}
+
+
+
+.winningItemContainer {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+
+.winningItemContainer .item {
+
+  display:flex;
+  flex:1;
+
+}
+
+.winningItemContainer .item img {
+  width:100%;
+
+
+}
+
+.provably-fair-data {
+  cursor:pointer;
+}
+
+.popover {
+  background-color:#000;
+}
+
+.popover-title {
+  background-color:#000;
+  border-color:#1a1d1f;
+}
+
+.popover-content {
+  background-color:#000;
+
+}
+.popover.popover-right::after, .popover.bs-tether-element-attached-left::after {
+  left: -10px;
+  margin-top: -10px;
+  border-right-color: #000;
+}
+
+.winningItemContainer .details {
+  width:64%;
+  padding:0 20px;
+  display:flex;
+  flex:2;
+  justify-content: center;
+  flex-direction:column;
+
+}
+
+.caseOpenedModal .modal-dialog{
+  max-width:500px !important;
+}
+
+
+.sellBtn {
+  font-weight:bold;
+}
+
+
+
+.leftNavigation {
+  overflow-y:auto;
+}
+
+.errorPage {
+  padding-top:100px;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background-color: #1a1d1f;
+  color:#fff;
+}
+
+.errorContainer {
+  margin: 0 auto;
+  max-width:800px;
+  text-align:center;
+  overflow-y: auto;
+}
+
+
+
+
+.rightContainer {
+  padding-right:5px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+  .rightSidebar {
+    display:none !important;
+  }
+  .oldStyle .scrollContainer {
+    padding-right:0 !important;
+  }
+
+  h2 {
+    font-size:1.5rem;
+  }
+
+  h3 {
+    font-size:1.2rem;
+  }
+  h4 {
+    font-size:1rem;
+  }
+  h5 {
+    font-size:1rem;
+  }
+
+  .nav-link {
+    font-size:12px !important;
+  }
+
+  .spinTextCenter, .spinTextLeft, .spinTextRight {
+    font-size:14px !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+  }
+
+  .caseDescription {
+    font-size:12px !important;
+  }
+
+  .weaponsContainer .weapon {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .weaponsContainer .weapon .title {
+    height:38px !important;
+    font-size:8px !important;
+  }
+
+  .weaponsContainer .weapon .imageContainer {
+    height:55px !important;
+  }
+
+  .weaponsContainer .weapon .imageContainer img.image {
+    height:55px !important;
+  }
+
+  .weaponsContainer .weapon .price {
+    height:15px !important;
+    font-size:10px !important;
+  }
+
+  .box {
+    padding: 5px 5px !important;
+  }
+
+  .totalOdds {
+    font-size:14px !important;
+  }
+
+  .caseCreatePrice {
+    font-size:14px !important;
+  }
+
+  .caseCreatePrice .btn.pull-right {
+    float:none;
+  }
+
+  .xs-hidden {
+    display:none !important;
+  }
+
+  .btn-dark-1, .btn-success-new,.btn {
+    padding:5px 10px !important;
+    font-size:10px !important;
+  }
+
+  input.form-control{
+    padding: 4px 4px !important;
+    font-size:10px !important;
+  }
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .nav-balance {
+    font-size:12px;
+    margin-left:-8px;
+    margin-top:3px;
+    color:#fff;
+  }
+
+  td,th {
+    padding: 2px !important;
+    font-size:12px !important;
+    text-align:center !important;
+  }
+
+  .sm-hidden {
+    display:none !important;
+  }
+
+  td .image-container {
+    width:35px !important;
+    height:30px !important;
+  }
+}
+
+@keyframes fadein{
+  0% { opacity:0.1; }
+  50% { opacity:0.6; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+  0% { opacity:0.1; }
+  50% { opacity:0.6; }
+  100% { opacity:1; }
+}
+
+.modal-content{
+  -webkit-animation: fadein 0.3s linear;
+  animation: fadein 0.3s linear;
+}
+
+iframe[name=google_conversion_frame] {
+  position:absolute;
+}
+

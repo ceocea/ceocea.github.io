@@ -1,4 +1,6 @@
 # HTTrack Website Copier Cookie File
 # This file format is compatible with Netscape cookies
-www.metin2nl.cf	TRUE	/	FALSE	1999999999	PHPSESSID	vharc1q9n4q3c6tjns0usntmd6
+.bing.com	TRUE	/	FALSE	1999999999	MUID	1A476A17C33461F33A2560D7C7346273
+bat.bing.com	TRUE	/	FALSE	1999999999	MR	0
+bat.bing.com	TRUE	/	FALSE	1999999999	MUIDB	04264A989D61651012FA40589C1364BF
 
