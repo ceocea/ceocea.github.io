@@ -1,15 +1,16 @@
-HTTrack3.49-2+htsswf+htsjava launched on Sat, 15 Jul 2017 15:05:54 at http://www.csgoldpot.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
-(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.csgoldpot.com/ -O1 "C:\My Web Sites\Idk" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 16 Jul 2017 11:46:20 at http://www.csgori.ch/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.csgori.ch/ -O1 "C:\My Web Sites\rich" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-15:06:11	Warning: 	Found for www.csgoldpot.com/?login
-15:06:11	Warning: 	File has moved from www.csgoldpot.com/?login to https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=checkid_setup&openid.return_to=http%3A%2F%2Fwww.csgoldpot.top%2F%3Flogin&openid.realm=http%3A%2F%2Fwww.csgoldpot.top&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select
-15:06:55	Error: 	"Not Found" (404) at link www.csgoldpot.com/js/loading.gif (from www.csgoldpot.com/js/jquery.arcticmodal-0.3.css)
-15:06:55	Error: 	"Not Found" (404) at link www.csgoldpot.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (from connect.facebook.net/pl_PL/sdk.js)
+11:46:53	Error: 	"Not Found" (404) at link www.csgori.ch/img/ico5.png (from www.csgori.ch/css/style.css)
+11:46:53	Error: 	"Not Found" (404) at link www.csgori.ch/img/ico8.png (from www.csgori.ch/css/style.css)
+11:46:53	Error: 	"Not Found" (404) at link www.csgori.ch/img/ico6.png (from www.csgori.ch/css/style.css)
+11:46:53	Error: 	"Not Found" (404) at link www.csgori.ch/css/img/stake-left.png (from www.csgori.ch/css/style.css)
+11:46:53	Error: 	"Not Found" (404) at link www.csgori.ch/css/img/stake-right.png (from www.csgori.ch/css/style.css)
 
-HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 1 seconds : 68 links scanned, 64 files written (2638273 bytes overall) [2347070 bytes received at 38476 bytes/sec], 1295028 bytes transferred using HTTP compression in 20 files, ratio 15%, 3.6 requests per connection
-(2 errors, 2 warnings, 0 messages)
+HTTrack Website Copier/3.49-2 mirror complete in 33 seconds : 46 links scanned, 40 files written (1329975 bytes overall) [766283 bytes received at 23220 bytes/sec], 792317 bytes transferred using HTTP compression in 22 files, ratio 24%, 3.5 requests per connection
+(5 errors, 0 warnings, 0 messages)

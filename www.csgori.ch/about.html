@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.csgori.ch/about by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2017 08:46:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CSGO Jackpot Gambling - Win CSGO items like knives, weapons and more! Try it out and win some skins!" />
+    <meta name="keywords" content="csgo jackpot, csgo gamble, csgo skins, csgo, csgo items" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+    <title>CSGORI.CH</title>
+</head>
+<body>
+<div id="large-header" class="large-header">
+    <canvas id="demo-canvas" width="100%"></canvas>
+</div>
+
+<header id="header">
+    <div style="  width: 1100px;  margin: auto;">
+        <strong class="logo"><a href="index.html">CSGORI.CH</a></strong>
+        <div style="float: right;">
+            <ul id="menu">
+                <li><a class="play" href="index.html"><i class="fa fa-play" style="padding-right: 10px;"></i>Play</a></li>
+                
+                <li><a class="history" href="history.html"><i class="fa fa-history" style="padding-right: 10px;"></i>Game History</a></li>
+                <li><a class="topplayers" href="topplayers.html"><i class="fa fa-star" style="padding-right: 10px;"></i>Top Players</a></li>
+                <li><a class="about" href="about.html"><i class="fa fa-book" style="padding-right: 10px;"></i>About</a></li>
+
+            </ul>
+
+                            <a class="btn" href="https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.mode=checkid_setup&amp;openid.return_to=http%3A%2F%2Fwww.csgori.ch%2Flogin&amp;openid.realm=http%3A%2F%2Fwww.csgori.ch&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select"><img src="img/steamloginbutton.png"></a>;
+                    </div>
+    </div>
+</header>
+
+<div id="wrapper">
+    <div id="main">
+        <div class="sidebar">
+    
+    <h3>Last Winner</h3>
+    <div class="last-winner">
+        <div class="visual">
+            <img src="../steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/96/96ed9e805d4c76a0a3cfde2b886090d4c50b09d4_full.jpg" alt="placeholder avatar" id="winner_avatar" width="109" height="109">
+        </div>
+        <div class="winnername" id="winner_name">
+           ₁₃₃₇
+        </div>
+        <ul>
+            <li>
+                <table>
+                    <tr>
+                        <td><span style="width: 80px; display: block;" class="val">Win:</span></td>
+                        <td><span class="price" id="winner_win">1.64$</span></td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table>
+                    <tr>
+                        <td><span style="width: 80px; display: block;" class="val">Chance:</span></td>
+                        <td><span class="price" id="winner_chance">45.12%</span></td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pricing">
+        <a target="_blank" href="http://csgo.steamlytics.xyz/">
+            <center>Pricing with</center>
+            <img src="img/steamlytics-white.png" alt="SteamLytics">
+        </a>
+    </div>
+</div>
+        <div id="about" class="content">
+    <h2>About</h2>
+    <div class="lists">
+        <div class="">
+            <h5>How to play</h5>
+            <p>
+            <ol>
+                <li>Click "Sign in through Steam".</li>
+                <li>Setup your trade URL in your "Account Settings" when you are logged in.</li>
+                <li>Go back to "Play" and click "Deposit now!" to send the bot a trade offer containing skins you want to deposit.</li>
+                <li>Once 50 or more skins are deposited, the winner will be randomly chosen.</li>
+            </ol>
+            </p>
+        </div>
+        <div style="text-align: center; border: 3px solid #00a753; padding: 10px;">
+            <span style="font-weight: bold; font-size: 16px;">We take no fee on pots with low value.</span><br>
+            <span style="font-weight: bold; font-size: 16px;">After every bet the timer will be reset to 100 seconds.</span>
+        </div><br>
+        <div class="">
+            <h5>Trade hold</h5>
+            <p>
+                <strong style="color: #00a753">Once Steam Guard Mobile is activated, you need to wait for 7 days after activation before the trade restriction is removed.</strong>
+            </p>
+        </div>
+        <div style="margin-top: 15px;" class="">
+            <h5>Rules</h5>
+            <p>
+                Please read the following, before you enter in a round:
+            <ul>
+                <li>The maximum number of items per deposit is 15. You can deposit as many times as you want per round. The minimum deposit is $0.15.</li>
+                <li>The game ends after 100 Seconds have passed or when 50+ items in total have been deposited.</li>
+                <li>The time it takes to add your deposit to the game varies from 2 to 30 seconds. In rare cases it may take more time because there is a large number of players in queue or Steam is experiencing difficulties.</li>
+                <li>Trades are sent to the winner immediately after the round ends. If you have not received the trade with your prize within five minutes, try out these steps: 1) You have entered the correct trade URL. 2) Your inventory is public (not marked as "private" in your privacy settings). 3) You have less than the maximum of 1,000 items in your inventory.</li>
+                <li>If you do not accept the trade offer within one hour, it will be canceled. This is necessary to keep the bots inventories clean.</li>
+                <li>If you didn't set your trade URL or entered an incorrect one, we can't send you the items! So please make sure the trade URL is correct.</li>
+                <li>Only items for CS:GO are accepted.</li>
+                <li>We take a 3% fee on pots worth $3.00 or more and a 5% fee on pots worth $25.00 or more.</li>
+                <li>We reserve the right to send the winner a prize containing random items with total item value equivalent to the amount won if the initial trade could not be sent or accepted on time.</li>
+                <li>If you have a problem with a trade offer or win, send us a support ticket within 1 hour. When its too late, we might not be able to help you!</li>
+                <li>Each time you visit the website or deposit an item you agree with the rules.</li>
+            </ul>
+            </p>
+        </div>
+        <div style="margin-top: 15px;" class="">
+            <h5>Round Hash</h5>
+            <p>
+                The round hash is a sha1 with MD5 string that is shown at the beginning of the round.
+					<span style="margin-top: -3px; font-size: 11px; letter-spacing: 1px; background: #474747; color: white; border-radius: 3px; padding: 5px 8px;">
+						hash = sha1(md5(roundnumber + percent))
+					</span>
+            </p>
+        </div>
+        <div class="">
+            <h5>Pricing</h5>
+            <p>
+            <center>We get the Prices using<br/>
+                <a href="http://csgo.steamlytics.xyz/" target="_blank"><img src="img/steamlytics.png" alt="SteamLytics"></a></center>
+            </p>
+        </div>
+        <div class="">
+            <h5>Privacy</h5>
+            <p>
+            <ul>
+                <li>We do not store any user data other than Steam user login and inventory links.</li>
+                <li>Users' icons and nicknames are available to all users of the website.</li>
+            </ul>
+            </p>
+        </div>
+        <div style="text-align: center; padding: 10px;">
+            <span style="font-weight: bold; font-size: 16px;">Any Problems?</span>
+            <p style="text-align: center;"><b style="color: #00a753">Message our support <a href="support.html">here</a></b></p>
+        </div>
+        <div class="btn_holder" style="margin-top: 0!important">
+            <a class="btn" href="index.html">Play!</a>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="../js.pusher.com/3.2/pusher.min.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="js/jquery.hexagonprogress.js"></script>
+<script src="js/TweenLite.min.js"></script>
+<script src="js/EasePack.min.js"></script>
+<script src="js/canvas.js"></script>
+<script src="../code.jquery.com/ui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+
+
+<script>
+    $( document ).ready(function() {
+        var url = 'about.html';
+        var offset = url.lastIndexOf('index.html');
+        url = url.substring(offset + 1);
+        if(offset > 10)
+            $("." + url).addClass("active");
+        else
+            $(".play").addClass("active");
+    });
+
+</script>
+</body>
+
+<!-- Mirrored from www.csgori.ch/about by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2017 08:46:53 GMT -->
+</html>

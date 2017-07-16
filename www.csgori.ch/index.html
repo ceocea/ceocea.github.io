@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.csgori.ch/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2017 08:46:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CSGO Jackpot Gambling - Win CSGO items like knives, weapons and more! Try it out and win some skins!" />
+    <meta name="keywords" content="csgo jackpot, csgo gamble, csgo skins, csgo, csgo items" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+    <title>CSGORI.CH</title>
+</head>
+<body>
+<div id="large-header" class="large-header">
+    <canvas id="demo-canvas" width="100%"></canvas>
+</div>
+
+<header id="header">
+    <div style="  width: 1100px;  margin: auto;">
+        <strong class="logo"><a href="index.html">CSGORI.CH</a></strong>
+        <div style="float: right;">
+            <ul id="menu">
+                <li><a class="play" href="index.html"><i class="fa fa-play" style="padding-right: 10px;"></i>Play</a></li>
+                
+                <li><a class="history" href="history.html"><i class="fa fa-history" style="padding-right: 10px;"></i>Game History</a></li>
+                <li><a class="topplayers" href="topplayers.html"><i class="fa fa-star" style="padding-right: 10px;"></i>Top Players</a></li>
+                <li><a class="about" href="about.html"><i class="fa fa-book" style="padding-right: 10px;"></i>About</a></li>
+
+            </ul>
+
+                            <a class="btn" href="https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.mode=checkid_setup&amp;openid.return_to=http%3A%2F%2Fwww.csgori.ch%2Flogin&amp;openid.realm=http%3A%2F%2Fwww.csgori.ch&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select"><img src="img/steamloginbutton.png"></a>;
+                    </div>
+    </div>
+</header>
+
+<div id="wrapper">
+    <div id="main">
+        <div class="sidebar">
+    
+    <h3>Last Winner</h3>
+    <div class="last-winner">
+        <div class="visual">
+            <img src="../steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/96/96ed9e805d4c76a0a3cfde2b886090d4c50b09d4_full.jpg" alt="placeholder avatar" id="winner_avatar" width="109" height="109">
+        </div>
+        <div class="winnername" id="winner_name">
+           ₁₃₃₇
+        </div>
+        <ul>
+            <li>
+                <table>
+                    <tr>
+                        <td><span style="width: 80px; display: block;" class="val">Win:</span></td>
+                        <td><span class="price" id="winner_win">1.64$</span></td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table>
+                    <tr>
+                        <td><span style="width: 80px; display: block;" class="val">Chance:</span></td>
+                        <td><span class="price" id="winner_chance">45.12%</span></td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pricing">
+        <a target="_blank" href="http://csgo.steamlytics.xyz/">
+            <center>Pricing with</center>
+            <img src="img/steamlytics-white.png" alt="SteamLytics">
+        </a>
+    </div>
+</div>
+            <div class="spinner-container-container"></div>
+
+    <!-- Notification -->
+    <div style="padding: 15px; background: rgba(255,255,255,0.8); line-height: 24px; width: 834px; border-radius: 3px; margin-bottom: 10px; display: inline-block; text-align: left;">
+        <div style="width:40%;display:inline-block;margin-top:-.5em;">
+            <img style="float:left;width:54%;margin-left:3em;" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17PLfYQJD_9W7m5a0mvLwOq7cqWdQ-sJ0xOzAot-jiQa3-hBqYzvzLdSVJlQ3NQvR-FfsxL3qh5e7vM6bzSA26Sg8pSGKJUPeNtY/360fx360f">
+        </div>
+        <div style="width:60%;display:inline-block;float:right;margin-top:3.2em;padding-right:0em">
+            <p style="font-size:18pt !important;">AWP | Asiimov (Field-Tested) Giveaway</p>
+            <p style="font-size:11pt;">Play a game before June 16th and get a chance to win!</p>
+        </div>
+    </div>
+    <!-- ////// -->
+
+
+    <div class="content">
+
+        <h3 style="text-align: left;">Game Round: #<span id="gameid">76138</span><span style="float: right; margin-top: -3px; font-size: 11px; background: #474747; color: white; word-spacing: 7px; border-radius: 3px; padding: 4px 5px;">Round-Hash: a93feb65791d4fa8021b30a3a324c345e1967dec </span></h3>
+        <div class="game">
+            <div class="progress" style="display: inline;">
+                <div style="border-bottom: 1px solid #00a753" class="items">
+                    <ul>
+                        <li style="padding-left: 12px; padding-right: 8px; width: 235px;">
+                            Games last 24 Hours
+                            <div class="text">
+                                <strong>106</strong>
+                            </div>
+                        </li>
+                        <li>
+                            Games last 7 Days
+                            <div class="text">
+                                <strong>437</strong>
+                            </div>
+                        </li>
+                        <li>
+                            Items last 24 Hours
+                            <div class="text">
+                                <strong>1410</strong>
+                            </div>
+                        </li>
+                        <li>
+                            Items last 7 Days
+                            <div class="text">
+                                <strong>11810</strong>
+                            </div>
+                        </li>
+                        <li style="width: 177px;">
+                            Highest Jackpot
+                            <div class="text">
+                                <strong>556.13$</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="visual">
+                    <div style="z-index: 0;  margin-left: -15px;" id="hexagontime"></div>
+                    <div id="hexagon" style="margin-top: -422px;"><div class="overlay" style="
+								    position: absolute;
+								    width: 300px;
+								    height: 300px;
+								    background-color: rgba(0, 0, 0, 0);
+								    border-radius: 50%;
+								    margin-left: 50px;
+								    margin-top: 50px;
+								    text-align: center;
+								    line-height: 60px;
+								    font-size: 16px;
+								    margin-top: -350px;">
+                            <div class="items">Items</div>
+                            <div class="ghbfv">0/50</div>
+                            <div class="jackpottitle">JACKPOT</div>
+                            <div style="color: #00a753; width: 100%; font-weight: bold; font-size: 28px; line-height: 0;">
+                                <span id="money_round">
+                                                                            0.00$
+                                                                    </span></div>
+                            <div id="end_game1" class="end_game"><span id="timeleft">100</span></div>
+                        </div></div>
+
+                    <div id="hexagonitemprogress">
+                        <script type="text/javascript">
+
+                        </script>
+                    </div>
+                    <div id="hexagontimeprogress">
+                        <script type="text/javascript">
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="rate" style="margin-bottom: 0px; margin-top: 15px;">
+                <h1 style="color: #00a753; font-size: 16px; text-shadow: none; outline: none; margin: 0; padding: 10px 0 0px 20px; line-height: 5px;">Play and win some Skins!</h1>
+                <div class="serverstatus" style="width: 100%;margin-right: 270px; padding: 10px 0 0px 20px;">
+                    <div style="font-weight: bold; font-size: 14px; display: inline-block;">STEAM SERVER STATUS</div>
+                    <div id="steamstat" style="display: inline-block;"></div>
+                </div>
+                <div class="jackpot">
+                    <p>
+                        <div style="border-radius: 3px; text-align: center; border: 3px solid #00a753; padding: 10px;">
+                            <h2 style="font-weight: bold; background: none; font-size: 14px; color: #333; padding: 0;">NOTICE</h2>
+                    <p style="text-align: center; font-size: 13px;color:red">Please check if your tradelink is correct before betting!</p></div>
+                </p>
+            </div>
+            <div class="count" style="width: 100%; margin-right: 270px;padding: 0px 0 5px 20px;">
+                <div class="chance rcol" style="width: 100%; float: right;font-size: 17px;margin-top: 10px;margin-bottom:20px;">
+                    <p style="font: 500 25px/25px 'Roboto', sans-serif;  margin: 0;  width: 105px;  float: left;  color: #474747;">Chance:</p>
+                    <div class="count" style="margin-top: 2px;">
+                                                    <span style="font-size: 25px;  color: #00a753;">0%</span>
+                                            </div>
+                </div>
+                <span id="minbet">Minimal Bet: <b style="color: #00a753">0.15$</b>, Max Items: 15.</span>
+                <br>
+                <span id="firstdeposit">Make the first deposit and get +10% chance to win!</span>
+            </div>
+        </div>
+
+                    <div id="add_game"><a class="btwn_game" href="https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.mode=checkid_setup&amp;openid.return_to=http%3A%2F%2Fwww.csgori.ch%2Flogin&amp;openid.realm=http%3A%2F%2Fwww.csgori.ch&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select"><i class="ico_enter_btn"></i>Log in to Deposit!</a></div>
+        
+        <div class="spinner">
+
+        </div>
+
+        <div class="stuffs promo-cover">
+            <ul id="game-sts">
+                <div class="rounditems">
+                                    </div>
+            </ul>
+        </div>
+        <div id="items-lastwinner"></div>
+    </div>
+
+    </div>
+</div>
+
+<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="../js.pusher.com/3.2/pusher.min.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="js/jquery.hexagonprogress.js"></script>
+<script src="js/TweenLite.min.js"></script>
+<script src="js/EasePack.min.js"></script>
+<script src="js/canvas.js"></script>
+<script src="../code.jquery.com/ui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+
+    <script>
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function roundToTwo(num) {
+            return +(Math.round(num + "e+2")  + "e-2");
+        }
+
+        function settimehexagon(time) {
+            $("#hexagontime").hexagonProgress({
+                value:time,
+                startAngle: Math.PI/2,
+                animation:false,
+                lineWidth: 8,
+                lineCap: "round",
+                background: null,
+                clip: true,
+                lineBackFill: { color : "#2f3439" },
+                lineFrontFill: { color : "#00a753" },
+                size: 430
+            });
+        }
+
+        function setitemhexagon(items)
+        {
+            $("#hexagon").hexagonProgress({
+                value:items,
+                startAngle: Math.PI/2,
+                lineWidth: 40,
+                lineCap: "flat",
+                background: null,
+                clip: true,
+                lineBackFill: { color : "#2f3439" },
+                lineFrontFill: { color : "#00a753" },
+                animation: false,
+                size: 400
+            });
+        }
+
+        var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'audio.mp3');
+        var audioElement2 = document.createElement('audio');
+        audioElement2.setAttribute('src', 'msg.mp3');
+        var audioElement3 = document.createElement('audio');
+        audioElement3.setAttribute('src', 'open.mp3');
+
+        var timer = 100;
+        var interval_id;
+        // Enable pusher logging - don't include this in production
+        Pusher.logToConsole = false;
+
+        var pusher = new Pusher('d8d03c8df974b63340dc', {
+            cluster: 'eu',
+            encrypted: true
+        });
+
+        
+        var channel = pusher.subscribe('main_channel');
+        channel.bind('notification', function(data) {
+            switch(data.message) {
+                case "USER_BET":
+                    $.get('/get_user_bet/' + data.steam_id, function(html) {
+                        audioElement2.play();
+
+                        var total_val = (data.total_value).toFixed(2);
+
+                        $("title").html("$" + total_val + " - CSGORI.CH");
+                        $("#bet_" + data.steam_id).remove();
+                        $(".rounditems").prepend(html);
+                        $(".ghbfv").html(data.current_size + "/50");
+                        $("#money_round").html(total_val + "$");
+
+                        
+                        setitemhexagon(data.current_size/50);
+                    });
+                    break;
+                case "START_TIMER":
+                    window.clearInterval(window.interval_id);
+                    starttimer();
+                    break;
+                case "START_SPIN":
+                    $.get('/get_roulette', function(html) {
+                        audioElement3.play();
+                        window.clearInterval(window.interval_id);
+
+                        $(".ghbfv").html("0/50");
+                        $("#money_round").html("0.00$");
+                        $("#timeleft").html("100");
+                        $("[id^=mychance]").html("0%");
+                        $("title").html("$0.00 - CSGORI.CH");
+
+                        $(".spinner").html(html);
+
+                        settimehexagon(100);
+                        setitemhexagon(0);
+
+                        $('.mainbox').css("margin-left",getRandomInt(-425,-5)+"px");
+                        setTimeout(function() {
+                            $(".mainbox").animate({marginLeft: getRandomInt(-3490,-3615)+"px"}, 6900, "easeOutCubic");
+                        },50);
+
+                        $(".rounditems").html("");
+
+                        setTimeout(function() {
+                            $("#hjgfd").slideUp();
+                            $(".weaponline").fadeOut("fast");
+                        },9000);
+
+                        setTimeout(function() {
+                            $.get('/get_lastwinner', function(data) {
+                                data = $.parseJSON(data);
+                                $("#winner_name").html(data.last_winner.name);
+                                $("#winner_avatar").attr("src", data.last_winner.avatar);
+                                $("#winner_win").html(data.last_jackpot.total_value + "$");
+                                $("#winner_chance").html(data.last_jackpot.chance + "%");
+                            });
+                        }, 7000);
+                    });
+                    break;
+                default:
+                    break;
+            }
+        });
+
+        $(document).ready(function() {
+            toastr.options = {
+                "positionClass": "toast-bottom-center",
+                "timeOut": "0",
+                "extendedTimeOut": "0"
+            };
+
+            if(window.timer < 100) starttimer(window.timer);
+
+            settimehexagon(100/100);
+            setitemhexagon(0.00);
+
+            var total_val = 0.00;
+            $("title").html("$" + total_val + " - CSGORI.CH");
+
+                    });
+
+        function starttimer(timeleft) {
+            if(typeof(timeleft) === 'undefined')
+                window.timer = 100;
+            else
+                window.timer = timeleft;
+
+            window.interval_id = window.setInterval(function () {
+                window.timer--;
+
+                if (window.timer < 0) return;
+
+                settimehexagon(window.timer / 100);
+
+                $("#timeleft").html(window.timer);
+            }, 1000);
+        }
+    </script>
+
+<script>
+    $( document ).ready(function() {
+        var url = 'index.html';
+        var offset = url.lastIndexOf('index.html');
+        url = url.substring(offset + 1);
+        if(offset > 10)
+            $("." + url).addClass("active");
+        else
+            $(".play").addClass("active");
+    });
+
+</script>
+</body>
+
+<!-- Mirrored from www.csgori.ch/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2017 08:46:29 GMT -->
+</html>
