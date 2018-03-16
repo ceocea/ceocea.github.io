@@ -1,6 +1,6 @@
 
 body {
-    background: url(https://media.giphy.com/media/xUOwFYNbft1YOAc77i/giphy.gif) no-repeat center center fixed;
+    background: url(https://media.giphy.com/media/30pMh3Ljyp0uI6GbmP/giphy.gif) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -17,15 +17,15 @@ body {
     text-shadow:-1px -1px 0px rgba(150,150,150,100);
 }
 	.center	{
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 59%;
     margin: -125px 0 0 -225px;
 	display:block;
 	margin-top: -30px;
     position: absolute;
-    z-index: 10;
-    width: 500px;
-    height: 500px;
+    z-index: 500;
+    width: 190px;
+    height: 100px;
     background-color: rgba(0,0,0,0);
 	}
 
